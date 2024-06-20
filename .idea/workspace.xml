@@ -4,14 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="157fa8b0-bc70-4cc1-869b-0aebe3558f9a" name="Changes" comment="First upload">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="157fa8b0-bc70-4cc1-869b-0aebe3558f9a" name="Changes" comment="Changed pom.xml (Added Hibernate dependencies for further development)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/somecompany/controller/FoodController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/food.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/recipes.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -58,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1718914923638</updated>
-      <workItem from="1718914924764" duration="1149000" />
+      <workItem from="1718914924764" duration="1816000" />
     </task>
     <task id="LOCAL-00001" summary="First upload">
       <option name="closed" value="true" />
@@ -68,7 +77,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718915186545</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Changed pom.xml (Added Spring MVC dependency">
+      <option name="closed" value="true" />
+      <created>1718916115359</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718916115359</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Changed pom.xml (Added Hibernate dependencies for further development)">
+      <option name="closed" value="true" />
+      <created>1718916303659</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718916303659</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,6 +112,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First upload" />
-    <option name="LAST_COMMIT_MESSAGE" value="First upload" />
+    <MESSAGE value="Changed pom.xml (Added Spring MVC dependency" />
+    <MESSAGE value="Changed pom.xml (Added Hibernate dependencies for further development)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed pom.xml (Added Hibernate dependencies for further development)" />
   </component>
 </project>
