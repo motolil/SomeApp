@@ -9,13 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="157fa8b0-bc70-4cc1-869b-0aebe3558f9a" name="Changes" comment="Added 2 wepPages (Empty)&#10;First realisation of a controller">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/somecompany/config/Initializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/somecompany/config/WebConfiguration.java" afterDir="false" />
+    <list default="true" id="157fa8b0-bc70-4cc1-869b-0aebe3558f9a" name="Changes" comment="Added some changes and added Maven dependency PostgreSQL support">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/somecompany/dao/FoodDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/somecompany/dao/FoodDAOSample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/somecompany/model/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/food.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/food.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/recipes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/recipes.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/somecompany/config/WebConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/somecompany/config/WebConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/somecompany/controller/FoodController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/somecompany/controller/FoodController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/food.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/food.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/recipes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/recipes.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +29,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -40,34 +44,39 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2i9u44mXWSbB0dWh75zXdxkI5zx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Tomcat Server.Tomcat 10.1.20.executor": "Run",
-    "Tomcat Server.Unnamed.executor": "Run",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Tomcat 10.1.20.executor&quot;: &quot;Run&quot;,
+    &quot;Tomcat Server.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Apps\someapp\src\main\webapp\WEB-INF" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Tomcat 10.1.20" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.20" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -173,7 +182,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1718914923638</updated>
-      <workItem from="1718914924764" duration="3437000" />
+      <workItem from="1718914924764" duration="5279000" />
+      <workItem from="1719082302368" duration="3018000" />
+      <workItem from="1719147742026" duration="1308000" />
+      <workItem from="1719264176207" duration="360000" />
+      <workItem from="1719430763411" duration="325000" />
     </task>
     <task id="LOCAL-00001" summary="First upload">
       <option name="closed" value="true" />
@@ -207,7 +220,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718916857898</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added WebCOnfiguration">
+      <option name="closed" value="true" />
+      <created>1718918413234</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718918413234</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +250,8 @@
     <MESSAGE value="Changed pom.xml (Added Spring MVC dependency" />
     <MESSAGE value="Changed pom.xml (Added Hibernate dependencies for further development)" />
     <MESSAGE value="Added 2 wepPages (Empty)&#10;First realisation of a controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added 2 wepPages (Empty)&#10;First realisation of a controller" />
+    <MESSAGE value="Added WebCOnfiguration" />
+    <MESSAGE value="Added some changes and added Maven dependency PostgreSQL support" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some changes and added Maven dependency PostgreSQL support" />
   </component>
 </project>

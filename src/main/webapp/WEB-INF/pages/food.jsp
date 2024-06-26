@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Title</title>
-    Hello
+    ${FirstProduct}
 </head>
 <body>
 
